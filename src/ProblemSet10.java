@@ -1,9 +1,7 @@
 import java.util.ArrayList;
 public class ProblemSet10 {
 
-    public static void main(String[] args) {
-
-    }
+    public static void main(String[] args) {}
 
     public String[] fizzBuzz(int start, int end) {
         if(start > end){
@@ -213,8 +211,8 @@ public class ProblemSet10 {
                 }
             }
             while(arrayList.size() > 0){
-                for(int k = 1; k < arrayList.size(); k++){
-                    if(compareReverseLists(arrayList.get(0), arrayList.get(k))){
+                for (int[] ints : arrayList) {
+                    if (compareReverseLists(arrayList.get(0), ints)) {
                         return i;
                     }
                 }
@@ -253,7 +251,7 @@ public class ProblemSet10 {
         }
         return temp.stream().mapToInt(i -> i).toArray();
     }
-    
+
     private boolean compareReverseLists(int[] list1, int[] list2){
         for(int i = 0; i < list1.length; i ++){
             if(list1[i] != list2[list2.length - 1 - i]){
