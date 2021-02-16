@@ -1,7 +1,10 @@
 import java.util.ArrayList;
 public class ProblemSet10 {
 
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+        int[] arr = new int[]{7, 7, 7};
+        System.out.println(new ProblemSet10().maxMirror(arr));
+    }
 
     public String[] fizzBuzz(int start, int end) {
         if(start > end){
@@ -200,7 +203,7 @@ public class ProblemSet10 {
         if(numbers == null){
             return -1;
         }
-        for (int i = numbers.length - 1; i > 0; i--){
+        for (int i = numbers.length; i > 0; i--){
             ArrayList<int[]> arrayList = new ArrayList<>();
             for(int j = 0; j < numbers.length; j++){
                 try {
